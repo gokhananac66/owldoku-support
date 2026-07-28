@@ -15,11 +15,13 @@
   }
   .wrap { max-width: 720px; margin: 0 auto; }
   header { text-align: center; margin-bottom: 40px; }
+  /* Kapibara SVG olarak cizilir. Onceden 🦫 emojisi vardi ama o karakter
+     Unicode 15.1 (2023) ile geldi ve Windows 10'un emoji fontunda YOK -
+     bos kutu olarak cikiyordu. SVG her cihazda ayni gorunur. */
   .badge {
     width: 104px; height: 104px; margin: 0 auto 16px;
-    border-radius: 26px;
-    background: linear-gradient(135deg, #F2A65A, #E07A3F);
-    display: grid; place-items: center; font-size: 54px;
+    display: block;
+    filter: drop-shadow(0 6px 14px rgba(110, 61, 34, .28));
   }
   h1 { margin: 0 0 4px; font-size: 34px; color: #6E3D22; letter-spacing: -0.5px; }
   .tagline { margin: 0; color: #8A7160; font-size: 16px; }
@@ -45,7 +47,38 @@
 <div class="wrap">
 
   <header>
-    <div class="badge">🦫</div>
+    <svg class="badge" viewBox="0 0 100 100" role="img" aria-label="Capydoku">
+      <defs>
+        <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#F2A65A"/>
+          <stop offset="1" stop-color="#E07A3F"/>
+        </linearGradient>
+      </defs>
+      <rect width="100" height="100" rx="25" fill="url(#plate)"/>
+      <circle cx="50" cy="50" r="29" fill="#FFF3E4"/>
+      <!-- Kapibara: uygulamadaki CustomPainter'in birebir SVG karsiligi -->
+      <!-- Cizim alani gercekte x 12..88, y 13..90 - yani merkezi (50, 51.5).
+           Kutunun degil ICERIGIN merkezine gore hizalanir, yoksa asagi kayik durur. -->
+      <g transform="translate(25 24.25) scale(0.5)"
+         stroke="#3B2A1E" stroke-opacity="0.55" stroke-width="3.5" stroke-linejoin="round">
+        <ellipse cx="23.5" cy="23.5" rx="12" ry="10.5" fill="#A9714B"/>
+        <ellipse cx="76.5" cy="23.5" rx="12" ry="10.5" fill="#A9714B"/>
+        <path d="M12 56A30 30 0 0 1 42 26L58 26A30 30 0 0 1 88 56L88 68A22 22 0 0 1 66 90L34 90A22 22 0 0 1 12 68Z"
+              fill="#A9714B"/>
+        <g stroke="none">
+          <rect x="20" y="31" width="60" height="13" rx="6.5" fill="#ffffff" fill-opacity="0.14"/>
+          <rect x="26" y="60" width="48" height="28" rx="14" fill="#CE9C6E"/>
+          <ellipse cx="35" cy="48.5" rx="6.25" ry="7.5" fill="#3B2A1E"/>
+          <ellipse cx="65" cy="48.5" rx="6.25" ry="7.5" fill="#3B2A1E"/>
+          <circle cx="37.8" cy="45" r="2.6" fill="#ffffff"/>
+          <circle cx="67.8" cy="45" r="2.6" fill="#ffffff"/>
+          <ellipse cx="43.5" cy="71.5" rx="3.75" ry="2.75" fill="#3B2A1E"/>
+          <ellipse cx="56.5" cy="71.5" rx="3.75" ry="2.75" fill="#3B2A1E"/>
+        </g>
+        <path d="M44 80.5Q50 84.5 56 80.5" fill="none"
+              stroke="#3B2A1E" stroke-opacity="0.75" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    </svg>
     <h1>Capydoku</h1>
     <p class="tagline">Mantık bulmacası · Logic puzzle</p>
   </header>
