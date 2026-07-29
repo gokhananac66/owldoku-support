@@ -1,0 +1,19 @@
+# Capydoku — app-ads.txt
+#
+# Bu dosya AdMob'un "yetkili satici" dogrulamasi icin gerekli. Yayinlanmazsa
+# reklam talebinin bir kismi dogrulanmamis sayilir ve gelir dusuk kalir
+# (Sudoku Clash SORUN 27 - orada bu dosya bastan yoktu).
+#
+# NASIL CALISIR:
+#  1. Bu dosya web sitesinin KOK dizininde yayinlanacak:
+#     https://<alan-adi>/app-ads.txt
+#  2. Play Console ve App Store Connect'teki "Gelistirici web sitesi" alani
+#     ayni alan adini gostermeli. Google iki tarafi eslestirerek dogruluyor.
+#  3. Dogrulama 24 saate kadar surebilir.
+#
+# ⚠️ ASAGIDAKI SATIR SU AN YER TUTUCU.
+# AdMob hesabi acildiktan sonra AdMob paneli > Uygulamalar > app-ads.txt
+# bolumundeki SATIRIN AYNISI buraya yapistirilacak. Yayinci kimligi
+# (pub-XXXXXXXXXXXXXXXX) kendi hesabina ait olacak.
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
