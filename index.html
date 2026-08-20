@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owldoku — GA Studios</title>
+<style>
+  :root{
+    --bg:#FFF7EE; --bg2:#FDEBD8; --card:#fff; --ink:#3B2A1E; --soft:#8A7160;
+    --brand:#9C5B36; --brandDark:#6E3D22; --line:rgba(138,113,96,.18);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#1B1512; --bg2:#241C17; --card:#2A211B; --ink:#F3E7DC;
+           --soft:#B7A292; --brand:#D08A5C; --brandDark:#E8A97A;
+           --line:rgba(240,220,200,.14); }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:64px 20px; text-align:center;
+    background:linear-gradient(180deg,var(--bg),var(--bg2));
+    color:var(--ink); min-height:100vh;
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  .wrap{max-width:560px;margin:0 auto}
+  .owl{font-size:64px;line-height:1;margin-bottom:14px}
+  h1{margin:0 0 4px;font-size:38px;font-weight:800;letter-spacing:-.8px;color:var(--brandDark)}
+  .tag{color:var(--soft);margin:0 0 30px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:20px;
+    padding:26px 24px;text-align:left;margin-bottom:26px;
+  }
+  .card p{margin:0 0 14px}
+  .card p:last-child{margin-bottom:0}
+  ul{margin:0;padding-left:20px;color:var(--soft)}
+  li{margin-bottom:6px}
+  .cta{
+    display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
+    font-weight:800;padding:14px 30px;border-radius:14px;margin:4px 6px;
+  }
+  .cta:hover{background:var(--brandDark)}
+  .links{margin-top:26px;font-size:14.5px;color:var(--soft)}
+  .links a{color:var(--brand);font-weight:700;text-decoration:none}
+  .links a:hover{text-decoration:underline}
+  .sep{margin:0 8px;opacity:.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="owl">🦉</div>
+  <h1>Owldoku</h1>
+  <p class="tag">Mantık bulmacası · Logic puzzle</p>
+
+  <div class="card">
+    <p>Her satıra, her sütuna ve her renkli bölgeye tam bir baykuş — ve hiçbiri
+       birbirine değmesin. Kuralları yirmi saniyede öğrenirsin.</p>
+    <ul>
+      <li>5x5'ten 10x10'a 500 bulmaca</li>
+      <li>Günlük bulmaca, herkese aynı</li>
+      <li>Her bulmacanın tek çözümü var — tahmine gerek yok</li>
+      <li>Tamamen çevrimdışı, üyelik yok</li>
+    </ul>
+  </div>
+
+  <a class="cta" href="https://apps.apple.com/app/id6796375574">App Store'dan indir</a>
+
+  <div class="links">
+    <a href="https://gokhananac66.github.io/owldoku-support/">Destek</a>
+    <span class="sep">·</span>
+    <a href="https://gokhananac66.github.io/owldoku-support/privacy.html">Gizlilik Politikası</a>
+    <span class="sep">·</span>
+    <a href="mailto:gokhananac66@gmail.com">İletişim</a>
+  </div>
+
+</div>
+</body>
+</html>
