@@ -1,4 +1,4 @@
-# Capydoku — app-ads.txt
+# Owldoku — app-ads.txt
 #
 # Bu dosya AdMob'un "yetkili satici" dogrulamasi icin gerekli. Yayinlanmazsa
 # reklam talebinin bir kismi dogrulanmamis sayilir ve gelir dusuk kalir
@@ -11,9 +11,19 @@
 #     ayni alan adini gostermeli. Google iki tarafi eslestirerek dogruluyor.
 #  3. Dogrulama 24 saate kadar surebilir.
 #
-# ⚠️ ASAGIDAKI SATIR SU AN YER TUTUCU.
-# AdMob hesabi acildiktan sonra AdMob paneli > Uygulamalar > app-ads.txt
-# bolumundeki SATIRIN AYNISI buraya yapistirilacak. Yayinci kimligi
-# (pub-XXXXXXXXXXXXXXXX) kendi hesabina ait olacak.
+# ⚠️ BU HALIYLE DOGRULANMAZ - KOK DIZIN SORUNU
+# Destek sitesi GitHub Pages PROJE sayfasi olarak yayinda:
+#     https://gokhananac66.github.io/capydoku-support/
+# Google ise dosyayi ALAN ADININ KOKUNDE ariyor:
+#     https://gokhananac66.github.io/app-ads.txt          <- baktigi yer
+#     https://gokhananac66.github.io/capydoku-support/…   <- dosyanin yeri
+# Yani Google dosyayi BULAMAZ ve dogrulama tamamlanmaz.
+#
+# Cozum secenekleri:
+#  a) `gokhananac66.github.io` adinda bir KULLANICI SAYFASI reposu ac,
+#     app-ads.txt'yi onun kokune koy. (Ucretsiz, en hizli yol.)
+#  b) Kendi alan adini al (ornegin owldoku.com), magaza girislerindeki
+#     "gelistirici web sitesi" alanini oraya cevir.
+# ⚠️ Alan adi degisirse magaza girisleri de guncellenmeli.
 
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-3753428532488898, DIRECT, f08c47fec0942fa0
